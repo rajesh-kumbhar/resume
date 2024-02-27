@@ -116,7 +116,7 @@
 %% Page Layout
 % Configure page margins with geometry
 \newlength{\sidemargin}
-\geometry{left=2.0cm, top=1.5cm, right=2.0cm, bottom=2.0cm, footskip=.5cm}
+\geometry{left=1.0cm, top=1.0cm, right=1.0cm, bottom=1.0cm, footskip=0.5cm}
 
 %% Header & Footer
 % Set offset to each header and footer
@@ -198,32 +198,32 @@
 % Configure styles for each CV elements
 
 % For elements of the sidebar
-\newcommand*{\sidebarstyle}[1]{{\fontsize{9.5pt}{1em}\bodyfontlight\color{text} #1}}
-\newcommand*{\sidebariconstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\color{text} #1}}
+\newcommand*{\sidebarstyle}[1]{{\fontsize{10.0pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\sidebariconstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\color{text} #1}}
 
 
 % For fundamental structures
-\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfontlight\color{graytext} #1}}
-\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\color{text} #1}}
-\newcommand*{\headerpositionstyle}[1]{{\fontsize{17pt}{1em}\bodyfont\scshape\color{awesome} #1}}
+\newcommand*{\headerfirstnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\scshape\color{text} #1}}
+\newcommand*{\headerlastnamestyle}[1]{{\fontsize{32pt}{1em}\headerfont\bfseries\scshape\color{text} #1}}
+\newcommand*{\headerpositionstyle}[1]{{\fontsize{15pt}{1em}\bodyfont\bfseries\upshape\color{awesome} #1}}
 %\newcommand*{\headeraddressstyle}[1]{{\fontsize{8pt}{1em}\headerfont\itshape\color{lighttext} #1}}
 %\newcommand*{\headersocialstyle}[1]{{\fontsize{6.8pt}{1em}\headerfont\color{text} #1}}
 \newcommand*{\headerquotestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\itshape\color{darktext} #1}}
 \newcommand*{\footerstyle}[1]{{\fontsize{8pt}{1em}\footerfont\scshape\color{lighttext} #1}}
-\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfont\bfseries\scshape\color{text}\@sectioncolor #1}}
+\newcommand*{\sectionstyle}[1]{{\fontsize{16pt}{1em}\bodyfontlight\bfseries\scshape\color{awesome} #1}}
 \newcommand*{\subsectionstyle}[1]{{\fontsize{12pt}{1em}\bodyfont\scshape\textcolor{text}{#1}}}
 \newcommand*{\paragraphstyle}{\fontsize{12pt}{1em}\bodyfontlight\upshape\color{text}}
 
-\newcommand*{\headersocialstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\color{text} #1}}
+\newcommand*{\headersocialstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\color{text} #1}}
 \newcommand*{\headeraddressstyle}[1]{\headersocialstyle{#1}}
 \newcommand*{\headericonstyle}[1]{\sidebariconstyle{#1}}
 
 % For elements of entry
-\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
-\newcommand*{\entrypositionstyle}[1]{{\fontsize{8pt}{1em}\bodyfont\scshape\color{graytext} #1}}
-\newcommand*{\entrydatestyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
-\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{awesome} #1}}
-\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\upshape\color{text} #1}}
+\newcommand*{\entrytitlestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{text} #1}}
+\newcommand*{\entrypositionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{awesome} #1}}
+\newcommand*{\entrydatestyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\entrylocationstyle}[1]{{\fontsize{9pt}{1em}\bodyfontlight\slshape\color{graytext} #1}}
+\newcommand*{\descriptionstyle}[1]{{\fontsize{9pt}{1em}\bodyfont\upshape\color{text} #1}}
 
 % For elements of subentry
 \newcommand*{\subentrytitlestyle}[1]{{\fontsize{8pt}{1em}\bodyfont\mdseries\color{graytext} #1}}
@@ -239,13 +239,14 @@
 \newcommand*{\hobbiesstyle}[1]{\headersocialstyle{#1}}
 
 % For elements of skill
-\newcommand*{\skilltypestyle}[1]{{\fontsize{10pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\skilltypestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
 \newcommand*{\skillsetstyle}[1]{{\fontsize{7.5pt}{1em}\bodyfontlight\color{text} #1}}
 \newcommand*{\languagestyle}[1]{\sidebarstyle{#1}}
 
 %\newcommand*{\skillsetstyle}[1]{{\fontsize{7pt}{1em}\bodyfontlight\color{text} #1}}
-
-
+\newcommand*{\institutestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\bfseries\color{darktext} #1}}
+\newcommand*{\institutelocationstyle}[1]{{\fontsize{8pt}{1em}\bodyfontlight\slshape\color{graytext}#1}}
+\newcommand*{\degreestyle}[1]{{\fontsize{9pt}{1em}\bodyfont\slshape\color{awesome} #1}}
 %-------------------------------------------------------------------------------
 %                Commands for personal information
 %-------------------------------------------------------------------------------
@@ -402,11 +403,11 @@
 \def\cmobileicon{\headersocialstyle{\faMobile}}
 \def\cmobile{\headersocialstyle{\@mobile}}
 % Github
-\def\cgiticon{\headersocialstyle{\href{https://github.com/\@github}{\faGithubSquare}}}
-\def\cgituser{\headersocialstyle{\href{https://github.com/\@github}{\@github}}}
+\def\cgiticon{\headersocialstyle{\href{\@github}{\faGithubSquare}}}
+\def\cgituser{\headersocialstyle{\href{\@github}{\@github}}}
 % Linkedin
-\def\clinkedinicon{\headersocialstyle{\href{https://www.linkedin.com/in/\@linkedinuser}{\faLinkedin}}}
-\def\clinkedinuser{\headersocialstyle{\href{https://www.linkedin.com/in/\@linkedinuser}{\@linkedinuser}}}
+\def\clinkedinicon{\headersocialstyle{\href{\@linkedinuser}{\faLinkedin}}}
+\def\clinkedinuser{\headersocialstyle{\href{\@linkedinuser}{\@linkedinuser}}}
 % Email
 \def\cemailicon{\headersocialstyle{\href{mailto:\@email}{\faEnvelope}}}
 \def\cemail{\headersocialstyle{\href{mailto:\@email}{\@email}}}
@@ -591,7 +592,7 @@
 
 % Define an about me summary
 \newenvironment{cvsummary}{%
-  \fontsize{10pt}{1em}\bodyfontlight\upshape\color{text}
+  \fontsize{10pt}{1em}\bodyfontlight\bfseries\upshape\color{text}
 }{ }
 
 % Define an environment for cventry
@@ -729,6 +730,10 @@
     %\skillsetstyle{#1}
 }
 
+\newcommand{\cvskill}[1]{%
+	\tikz[baseline]\node[anchor=base,draw=awesome!75,rounded corners,inner xsep=1ex,inner ysep =0.75ex,text height=1.5ex,text depth=.25ex]{#1};
+}
+
 \newenvironment{skillstable}{
     %\renewcommand{\arraystretch}{0.8}
     %\setlength{\tabcolsep}{0pt}
@@ -741,6 +746,11 @@
     \vspace{-2.0mm}
 }
 
+%-------------------------------------------------------------------------------
+%               Education
+%-------------------------------------------------------------------------------
+% Define an entry of education
+\newcommand*{\educationinstitute}[1]{\institutestyle{#1}}
 
 
 %-------------------------------------------------------------------------------
