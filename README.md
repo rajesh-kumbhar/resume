@@ -1,11 +1,5 @@
 This repository is a latex resume built on top of
-[awesome-cv](https://github.com/posquit0/Awesome-CV). The main changes are
-reducing the resume to be a single page, and introducing two columns separated
-by a timeline with dots.
-
-Here's an example of the output:
-![resume-1](https://github.com/Slyces/resume/assets/22822015/532e6663-8bed-4b9f-bc7f-d74686b35d77)
-
+[awesome-cv](https://github.com/posquit0/Awesome-CV). and [Slyces/resume](https://github.com/Slyces/resume)
 
 # Can I use this template?
 
