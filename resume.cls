@@ -592,7 +592,7 @@
 
 % Define an about me summary
 \newenvironment{cvsummary}{%
-  \fontsize{10pt}{1em}\bodyfontlight\bfseries\upshape\color{text}
+  \fontsize{10pt}{1em}\bodyfont\upshape\color{text}
 }{ }
 
 % Define an environment for cventry
